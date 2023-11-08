@@ -1,0 +1,72 @@
+/* --- Estilo da Página --- */
+
+/* Estilo Geral */
+header {
+    padding: 5vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #302858;
+    color: #E0C8F8;
+}
+main {
+    padding: 5vw;
+    display: flex;
+}
+footer {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: block;
+    text-align: center; 
+    color: #E0C8F8;
+    background-color: #302858;
+}
+p {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+h1, h2, h3, h4, h5, h6 {
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+/* Estilo Específico */
+#introducao {
+    width: 45vw;
+}
+#introducao h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+#introducao p {
+    font-size: 1rem;
+}
+#avatar {
+    width: 45vw;
+}
+#avatar img {
+    width: 30vw;
+    border-radius: 100%;
+
+}
+.projeto img {
+    width: 10vw;
+}
+
+/* Footer */
+#icons {
+    padding-top: 1vh;
+}
+#icons img {
+    width: 1rem;
+}
+#icons a {
+    font-size: 1rem;
+    color: #E0C8F8  ;
+    text-decoration: none;
+}
+#developed {
+    font-size: 0.7rem;
+}
