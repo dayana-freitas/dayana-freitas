@@ -1,5 +1,4 @@
-### Hi there 👋
-
+### Hello, Bem Vindos ao meu GitHub
 <!--
 **dayana-freitas/dayana-freitas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
