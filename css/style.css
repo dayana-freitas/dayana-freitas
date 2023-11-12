@@ -27,10 +27,15 @@ footer {
 p {
     padding-top: 1vw;
     padding-bottom: 1vw;
+    font-size: 1rem;
 }
 h1, h2, h3, h4, h5, h6 {
     padding-top: 1vw;
     padding-bottom: 1vw;
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 h2 {
     color: #302858;
@@ -44,17 +49,20 @@ ul {
     padding-top: 1vw;
     padding-bottom: 1vw;
 }
+button {
+    font-size: 1rem;
+    background-color:#FFF;
+    color:#302858;
+    padding: 1vw;
+    border: solid 2px;
+    border-color: #302858;
+    margin: 1vw;
+}
 
-/* Estilo Específico */
+/* Estilo Específico - Base/Index */
+/* Header */
 #introducao {
     width: 45vw;
-}
-#introducao h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-#introducao p {
-    font-size: 1rem;
 }
 #avatar {
     width: 45vw;
@@ -65,28 +73,35 @@ ul {
 
 }
 
+/* Main */
+/* Portifólio */
 #portifolio {
     width: 90vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.projeto {
+.item-portifolio {
     margin: auto;
     text-align: center;
     padding: 1vw;
     width: 28vw;
     min-width: 300px;
 }
-.projeto img {
+.item-portifolio img {
     width: 100%;
+    aspect-ratio: 1/0.6;
+    object-fit: cover;
+    object-position: top;
 }
 
 /* Footer */
 #icons {
     padding-top: 1vw;
+    margin: auto;
 }
 #icons img {
+    right: 1rem;
     width: 1rem;
 }
 #icons a {
@@ -97,3 +112,34 @@ ul {
 #developed {
     font-size: 0.7rem;
 }
+
+/* Página Portifólio */
+#banner-portifolio {
+    width: 100%;
+}
+#banner-portifolio img {
+    width: 100%;
+    aspect-ratio: 1/0.3;
+    object-fit: cover;
+    object-position: top;
+}
+/* 
+#carrossel {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.imagem-carrossel {
+    margin: auto;
+    text-align: center;
+    padding: 1vw;
+    width: 28vw;
+    min-width: 300px;
+}
+.imagem-carrossel img {
+    width: 100%;
+    aspect-ratio: 1/0.6;
+    object-fit: cover;
+    object-position: top;
+} */
