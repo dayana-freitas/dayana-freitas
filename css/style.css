@@ -89,6 +89,7 @@ a {
 }
 .item-portifolio {
     margin: auto;
+    margin-top: 0;
     text-align: center;
     padding: 1vw;
     width: 28vw;
