@@ -9,6 +9,9 @@ header {
     background-color: #302858;
     color: #E0C8F8;
 }
+header h1 {
+    color: #E0C8F8;
+}
 main {
     padding: 5vw;
     display: block;
@@ -36,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     font-size: 2.5rem;
     font-weight: bold;
+    color:#302858;
 }
 h2 {
     color: #302858;
@@ -58,6 +62,9 @@ button {
     border-color: #302858;
     margin: 1vw;
 }
+a {
+    text-decoration: none;
+}
 
 /* Estilo Específico - Base/Index */
 /* Header */
@@ -70,7 +77,6 @@ button {
 #avatar img {
     width: 30vw;
     border-radius: 100%;
-
 }
 
 /* Main */
@@ -123,6 +129,18 @@ button {
     object-fit: cover;
     object-position: top;
 }
+
+/* Carrossel de Imagem */
+
+/* [data-component="slideshow"] .slide {
+	display: none;
+  text-align: center;
+}
+
+[data-component="slideshow"] .slide.active {
+	display: block;
+} */
+
 /* 
 #carrossel {
     width: 90vw;
