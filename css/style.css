@@ -29,6 +29,7 @@ button {
     padding: 1vw;
     border: solid 2px;
     border-color: #302858;
+    border-radius: 10px;
     margin: 1vw;
 }
 p {
@@ -96,6 +97,7 @@ header h1 {
     aspect-ratio: 1/0.6;
     object-fit: cover;
     object-position: top;
+    border-radius: 20px;
 }
 
 /* Footer */
@@ -125,6 +127,7 @@ header h1 {
     aspect-ratio: 1/0.3;
     object-fit: cover;
     object-position: top;
+    border-radius: 20px;
 }
 
 /* Carrossel de Imagens */
