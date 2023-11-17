@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página pessoal de Dayana Freitas">
+    <meta name="keywords" content="dayana resende de freitas, dayana freitas, dayana-freitas, dayana freitas portifolio">
+    <title>Dayana Freitas</title>
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- script para importar partes do html em outros arquivos através de uma biblioteca angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+</head>
+<body ng-app="">
+    <header>
+        <div id="banner-portifolio">
+            <img src="imagens/banner-paginapessoal.png" alt="Imagem da página principal da página pessoal de Dayana Freitas">
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>Página Pessoal</h1>
+            <section>
+                <h2>Descrição</h2>
+                <p>Site desenvolvido em HTML semântico e CSS, para ser meu portifílio</p>
+            </section>
+            <section>
+                <h2>Como Instalar/Acessar</h2>
+                <p>No repositório disponível no GitHub é possível encontrar todo o código fonte, os arquivos de template de páginas e até mesmo fazer um Fork para o seu GitHub para usa-lo de base.</p>
+                <p><a href="https://github.com/dayana-freitas/dayana-freitas">LINK DO REPOSITÓRIO NO GITHUB</a></p>
+            </section>
+            <section>
+                <h2>Linguagens e bibliotecas usadas no desenvolvimento</h2>
+                <ul>                    
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Fontes do Google</li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <h2>Imagens</h2>
+            <br><br>
+            <div class="carrossel">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <div class="navigation">
+                        <label class="bar" for="slide1"></label>
+                        <label class="bar" for="slide2"></label>
+                        <label class="bar" for="slide3"></label>
+                        <label class="bar" for="slide4"></label>
+                    </div>
+                    <div class="slide s1">
+                        <img src="imagens/carrossel/pagina-pessoal-img1.png" alt="Imagem um do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel/pagina-pessoal-img2.png" alt="Imagem dois do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel/pagina-pessoal-img3.png" alt="Imagem três do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel//pagina-pessoal-img4.png" alt="Imagem quatro do template">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer ng-include="'../blocks/footer.html'"><!-- Importação do footer --></footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página pessoal de Dayana Freitas">
+    <meta name="keywords" content="dayana resende de freitas, dayana freitas, dayana-freitas, dayana freitas portifolio">
+    <title>Dayana Freitas</title>
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- script para importar partes do html em outros arquivos através de uma biblioteca angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+</head>
+<body ng-app="">
+    <header>
+        <div id="banner-portifolio">
+            <img src="imagens/banner-quizvelozescuriosos.png" alt="Tela inicial do quiz no Online GDB">
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>Quiz Velozes e Curiosos</h1>
+            <section>
+                <h2>Descrição</h2>
+                <p>Esse é um projeto desenvolvido para a matéria de computação, sendo codado nele um quiz sobre qual personagem de velozes e furiosos você seria. No projeto, foram cumpridos alguns requisitos sendo eles:</p>
+                <ul>
+                    <li>Leitura de nome do usuário</li>
+                    <li>Verificação da quantidade de caracteres que o nome possui</li>
+                    <li>Criação de filtro para escolha entre modo rápido com 3 questões e modo completo com 10 questões</li>
+                    <li>Manipulação de arquivos para acesso as perguntas</li>
+                    <li>Gerador de questões aleatórias (escolher de modo aleatória 3 ou 10 das questões cadastradas não podendo repetir a questão na partida em questão)</li>
+                    <li>Apresentação do resultado final com base nas respostas dadas pelo usuário</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Como Instalar/Acessar</h2>
+                <p>Requisitos básicos para compilar um código em C usando o VSCode no Windows:</p>
+                <ul>
+                    <li>MinGW - GCC instalado no PC</li>
+                    <li>Extenção C/C++ insatalada no VSCode</li>
+                    <li>Extenção C/C++ Compile Run insatalada no VSCode</li>
+                </ul>
+                <p>Tutorial no YouTube explicando as informações acima: <a href="https://www.youtube.com/watch?v=-nkkQT4QnX0">https://www.youtube.com/watch?v=-nkkQT4QnX0</a></p>
+                <h3>Compilar no PC Windows com VSCode</h3>
+                <p>Para rodar o código com os caracteres corretos no windows usando o Visual Studio Code é necessário trocar o encoding por ISO8859-1 tanto nos dados como no quiz e recolar os códigos disponíveis em base.txt com os caracteres corretos. Em seguida compilar normalmente utilizando o F6. O vídeo acima explica como fazer o encoding.</p>
+                <h3>Rodar no Online GDB - Plataforma Online que simula o funcionamento no Linux</h3>
+                <p>Carregar os arquivos quiz-linux e dados-linux no Online GDB e executa-los.</p>
+                <h3>Rodar somente o executável no Windows</h3>
+                <p>Para rodar somente o executável basta roda-lo numa pasta que contenha tanto o executável quanto o arquivo dados.txt juntos.</p>
+                <p><a href="https://github.com/dayana-freitas/quizvelozesecuriosos">LINK DO REPOSITÓRIO NO GITHUB</a></p>
+            </section>
+            <section>
+                <h2>Linguagens e bibliotecas usadas no desenvolvimento</h2>
+                <ul>                    
+                    <li>Linguagem C</li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <h2>Imagens</h2>
+            <br><br>
+            <div class="carrossel">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <div class="navigation">
+                        <label class="bar" for="slide1"></label>
+                        <label class="bar" for="slide2"></label>
+                        <label class="bar" for="slide3"></label>
+                        <label class="bar" for="slide4"></label>
+                    </div>
+                    <div class="slide s1">
+                        <img src="imagens/carrossel/quiz-velozes-curiosos-img1.png" alt="Imagem um do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel/quiz-velozes-curiosos-img2.png" alt="Imagem dois do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel/quiz-velozes-curiosos-img3.png" alt="Imagem três do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel/quiz-velozes-curiosos-img4.png" alt="Imagem quatro do template">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer ng-include="'../blocks/footer.html'"><!-- Importação do footer --></footer>
+</body>
+</html>
