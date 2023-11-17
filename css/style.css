@@ -57,6 +57,8 @@ h3 {
 ul {
     padding-top: 1vw;
     padding-bottom: 1vw;
+    list-style: circle;
+    padding-left: 1vw;
 }
 a {
     text-decoration: none;
