@@ -1,7 +1,7 @@
 ### Hello, bem vindos ao meu GitHub
 
 <p>
-    🎓 | Sou formada Técnica em Desenvolvimento de Sistemas e por aqui tenho alguns dos meus projetos
+    🎓 | Formada Técnica em Desenvolvimento de Sistemas e por aqui tenho alguns dos meus projetos
 </p>
 <p>
     💻 | Amante do desenvolvimento Front-End
