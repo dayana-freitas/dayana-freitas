@@ -4,7 +4,7 @@
     🎓 | Formada Técnica em Desenvolvimento de Sistemas e por aqui tenho alguns dos meus projetos
 </p>
 <p>
-    💻 | Amante do desenvolvimento Front-End
+    ⚡ | Cursando Engenharia Elétrica na UTFPR
 </p>
 <p>
     🔗 | Logo mais deixarei disponível um material sobre html semântico
