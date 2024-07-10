@@ -1,14 +1,23 @@
 /* Estilo Geral */
+/* Importa as fontes do google */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Trad:wght@100..400&display=swap');
+
 header {
-    padding: 5vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
     display: flex;
     align-items: center;
     text-align: center;
     background-color: #302858;
-    color: #E0C8F8;
+    color: #F2D16D;
 }
 main {
-    padding: 5vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
     display: block;
     color: #3C3C3C;
 }
@@ -35,20 +44,24 @@ button {
 p {
     padding-top: 1vw;
     padding-bottom: 1vw;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 h1, h2, h3, h4, h5, h6 {
     padding-top: 1vw;
     padding-bottom: 1vw;
 }
 h1 {
+    padding-bottom: 5vw;
     font-size: 2.5rem;
     font-weight: bold;
+    font-family: "Playwrite FR Trad", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
     color:#302858;
 }
 h2 {
     color: #302858;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 h3 {
@@ -59,6 +72,7 @@ ul {
     padding-bottom: 1vw;
     list-style: circle;
     padding-left: 1vw;
+    font-size: 1.1rem;
 }
 a {
     text-decoration: none;
@@ -74,14 +88,15 @@ a {
 #avatar img {
     width: 30vw;
     border-radius: 100%;
+    /* border: 3px solid #F2BB13; */
 }
 header h1 {
-    color: #E0C8F8;
+    color: #F2BB13;
 }
 
 /* Portifólio - Index - Main */
 #portifolio {
-    width: 90vw;
+    width: 80vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -91,7 +106,7 @@ header h1 {
     margin-top: 0;
     text-align: center;
     padding: 1vw;
-    width: 28vw;
+    width: 38vw;
     min-width: 300px;
 }
 .item-portifolio img {
@@ -112,19 +127,28 @@ header h1 {
     margin: auto;
 }
 #icons img {
-    right: 1rem;
-    width: 1rem;
+    right: 0.9rem;
+    width: 0.9rem;
 }
 #icons a {
     font-size: 1rem;
-    color: #E0C8F8  ;
+    color: #e0c8f8  ;
     text-decoration: none;
 }
 #developed {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    color: #f2bb13;
 }
 
 /* Página Portifólio  */
+.voltar {
+    position: absolute;
+    left: 2vw;
+    top: 2vw;
+}
+.voltar img {
+    width: 2vw;
+}
 #banner-portifolio {
     width: 100%;
 }
@@ -143,20 +167,20 @@ header h1 {
     overflow: hidden;
 }
 .navigation {
-    width: 90vw;
-    margin-top: 35vw;
+    width: 80vw;
+    margin-top: 42vw;
     height: 5vw;
     position: absolute;
     display: flex;
     justify-content: center;
 }
 .bar {
-    width: 8vw;
-    height: 2vw;
+    width: 1vw;
+    height: 1vw;
     margin-left: 1vw;
     margin-right: 1vw;
-    border: 2px solid #E0C8F8;
-    border-radius: 5px;
+    border: 2px solid #302858;
+    border-radius: 100px;
     cursor: pointer;
     transition: .6s;
 }
@@ -195,4 +219,20 @@ input {
 }
 #slide5:checked ~ .s1 {
     margin-left: -80%;
+}
+
+#slide1:checked ~ .navigation .bar1 {
+    background-color: #302858;
+}
+#slide2:checked ~ .navigation .bar2 {
+    background-color: #302858;
+}
+#slide3:checked ~ .navigation .bar3 {
+    background-color: #302858;
+}
+#slide4:checked ~ .navigation .bar4 {
+    background-color: #302858;
+}
+#slide5:checked ~ .navigation .bar5 {
+    background-color: #302858;
 }
