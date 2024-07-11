@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página pessoal de Dayana Freitas">
+    <meta name="keywords" content="dayana resende de freitas, dayana freitas, dayana-freitas, dayana freitas portifolio">
+    <title>Dayana Freitas</title>
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- script para importar partes do html em outros arquivos através de uma biblioteca angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+</head>
+<body ng-app="">
+    <header>
+        <a class="voltar" href="https://dayana-freitas.github.io/dayana-freitas/"><img src="../imagens/icon-arrow-back.png" alt="Icone voltar"></a>
+        <div id="banner-portifolio">
+            <img src="imagens/banner-controladortemperaturaumidade.png" alt="Descrição do Banner">
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>Controlador de Temperatura e Umidade</h1>
+            <section>
+                <h2>Descrição</h2>
+                <p>O projeto foi desenvolvido com base no controlador de temperatura e umidade N323-RHT, da marca Novus, que possui três saídas de controle e pode ser configurado manualmente. Utilizando esse controlador como referência, criamos o protótipo que será apresentado, o qual possui funções para definir a temperatura e umidade mínima e máxima de acordo com as necessidades do usuário. As saídas do sistema serão utilizadas para ativar a irrigação, o aquecimento e a refrigeração da estufa conforme os parâmetros cadastrados.</p>
+                <p>Apresentação do projeto no YouTube:  <a href="https://www.youtube.com/watch?v=TjvKqfbe9nc" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=TjvKqfbe9nc</a></p>
+            </section>
+            <section>
+                <h2>Materiais utilizados</h2>
+                <ul>                    
+                    <li>1 Arduino UNO</li>
+                    <li>3 Displays de 7 segmentos cátodo comum</li>
+                    <li>3 Registradores de deslocamento 74HC595</li>
+                    <li>1 Demultiplexador 74LS139</li>
+                    <li>1 Contador 74LS393</li>
+                    <li>1 Porta Inversora74LS04</li>
+                    <li>1 Porta AND 74LS08</li>
+                    <li>3 LEDs</li>
+                    <li>3 Botões</li>
+                    <li>2 Protoboards</li>
+                    <li>Resistores</li>
+                    <li>Jumpers</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Como Instalar/Acessar</h2>
+                <p>No arquivo projeto.c está a versão final apresentada do projeto, dentro dele o código está comentado afim de facilitar o entendimento da conexão de portas.</p>
+                <p>O projrto também pode ser simulado no TinkerCad através do link: <a href="https://www.tinkercad.com/things/lmZnEpiFMLK-controlador-de-temperatura-e-umidade?sharecode=qH96mGcl8HffHrVjqjyqkoQV5-Z8oD8nZZ1EQgmY5Hc" target="_blank" rel="noopener noreferrer">https://www.tinkercad.com/things/lmZnEpiFMLK-controlador-de-temperatura-e-umidade?sharecode=qH96mGcl8HffHrVjqjyqkoQV5-Z8oD8nZZ1EQgmY5Hc</a></p>
+                <p>Perceba que a simulação é um pouco diferente do projeto final pois não possui a função demultiplexador.</p>
+                <p><a href="https://github.com/dayana-freitas/controladortemperaturaumidade" target="_blank" rel="noopener noreferrer">LINK DO REPOSITÓRIO NO GITHUB</a></p>
+            </section>
+            <section>
+                <h2>Linguagens e bibliotecas usadas no desenvolvimento</h2>
+                <ul>                    
+                    <li>Linguagem C</li>
+                    <li>Programação para Arduíno</li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <h2>Imagens</h2>
+            <br><br>
+            <div class="carrossel">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <input type="radio" name="slide" id="slide5">
+                    <div class="navigation">
+                        <label class="bar bar1" for="slide1"></label>
+                        <label class="bar bar2" for="slide2"></label>
+                        <label class="bar bar3" for="slide3"></label>
+                        <label class="bar bar4" for="slide4"></label>
+                        <label class="bar bar5" for="slide5"></label>
+                    </div>
+                    <div class="slide s1">
+                        <img src="imagens/carrossel/controlador-temperatura-umidade-img1.png" alt="Imagem um do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel/controlador-temperatura-umidade-img2.png" alt="Imagem dois do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel/controlador-temperatura-umidade-img3.png" alt="Imagem três do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel/controlador-temperatura-umidade-img4.png" alt="Imagem quatro do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel/controlador-temperatura-umidade-img5.jpg" alt="Imagem cinco do template">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer ng-include="'../blocks/footer.html'"><!-- Importação do footer --></footer>
+</body>
+</html>
