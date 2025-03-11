@@ -1,6 +1,7 @@
 /* Estilo Geral */
 /* Importa as fontes do google */
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Trad:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+FR+Trad:wght@100..400&display=swap');
 
 header {
     padding-top: 5vw;
@@ -35,7 +36,10 @@ button {
     font-size: 1rem;
     background-color:#FFF;
     color:#302858;
-    padding: 1vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-bottom: 0.7vw;
+    padding-top: 0.7vw;
     border: solid 2px;
     border-color: #302858;
     border-radius: 10px;
@@ -50,11 +54,15 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 1vw;
     padding-bottom: 1vw;
 }
+#nome {
+    font-family: "Playwrite FR Trad", cursive;
+    font-size: 3rem;
+}
 h1 {
+    font-family: "Oswald", sans-serif;
     padding-bottom: 5vw;
     font-size: 2.5rem;
     font-weight: bold;
-    font-family: "Playwrite FR Trad", cursive;
     font-optical-sizing: auto;
     font-style: normal;
     color:#302858;
@@ -106,7 +114,7 @@ header h1 {
     margin-top: 0;
     text-align: center;
     padding: 1vw;
-    width: 38vw;
+    width: 24vw;
     min-width: 300px;
 }
 .item-portifolio img {
@@ -114,6 +122,9 @@ header h1 {
     aspect-ratio: 1/0.6;
     object-fit: cover;
     object-position: top;
+    border: solid;
+    border-width: 1px;
+    border-color: #E0C8F8;
     border-radius: 20px;
 }
 .item-portifolio a {

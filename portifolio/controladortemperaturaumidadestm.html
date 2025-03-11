@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página pessoal de Dayana Freitas">
+    <meta name="keywords" content="dayana resende de freitas, dayana freitas, dayana-freitas, dayana freitas portifolio">
+    <title>Dayana Freitas</title>
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- script para importar partes do html em outros arquivos através de uma biblioteca angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+</head>
+<body ng-app="">
+    <header>
+        <a class="voltar" href="https://dayana-freitas.github.io/dayana-freitas/"><img src="../imagens/icon-arrow-back.png" alt="Icone voltar"></a>
+        <div id="banner-portifolio">
+            <img src="imagens/banner-controlador-temperatura-umidade-stm.png" alt="Descrição do Banner">
+        </div>
+    </header>
+    <main>
+        <article>
+            <h1>Controlador de Temperatura e Umidade com STM32F411</h1>
+            <section>
+                <h2>Descrição</h2>
+                <p>O projeto foi desenvolvido a partir do controlador de temperatura e umidade N323-RHT da marca Novus, que possui três saídas de controle e configuração manual. Um protótipo foi criado com funções de definição de temperatura e umidade mínimas e máximas conforme as necessidades do usuário. As saídas ativarão a irrigação, aquecimento e refrigeração da estufa conforme os parâmetros definidos. Além disso, um alerta luminoso será acionado quando as medições se aproximarem dos valores críticos.</p>
+                <p>A programação do controlador é baseada em interrupções, com dois timers (TIM4 e TIM5) funcionando a 1Hz. O TIM4 ativa uma rotina de interrupção para leitura dos potenciômetros e atualização das saídas do controlador. O TIM5 alterna a exibição de temperatura e umidade no display a cada interrupção. Um loop WHILE cadastra parâmetros quando o botão de função é pressionado, interrompendo os timers. O TIM3 é responsável pelo PWM do led de alerta. A máquina de estados controla a ativação das saídas, incluindo irrigação, aquecimento, resfriamento e alertas.</p>
+            </section>
+            <section>
+                <h2>Como Instalar/Acessar</h2>
+                <p>Acesse o link do repositório para ter acesso aos códigos e ao projeto no STM32CubeMX</p>
+                <p><a href="https://github.com/dayana-freitas/controladortemperaturaumidadeSTM32F411" target="_blank" rel="noopener noreferrer">LINK DO REPOSITÓRIO NO GITHUB</a></p>
+            </section>
+            <section>
+                <h2>Linguagens e bibliotecas usadas no desenvolvimento</h2>
+                <ul>                    
+                    <li>Linguagem C</li>
+                    <li>API para o microcontrolador da ST</li>
+                    <li>STM32CubeMX</li>
+                </ul>
+            </section>
+        </article>
+        <article>
+            <h2>Imagens</h2>
+            <br><br>
+            <div class="carrossel">
+                <div class="slides">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    <input type="radio" name="slide" id="slide4">
+                    <input type="radio" name="slide" id="slide5">
+                    <div class="navigation">
+                        <label class="bar bar1" for="slide1"></label>
+                        <label class="bar bar2" for="slide2"></label>
+                        <label class="bar bar3" for="slide3"></label>
+                        <label class="bar bar4" for="slide4"></label>
+                        <label class="bar bar5" for="slide5"></label>
+                    </div>
+                    <div class="slide s1">
+                        <img src="imagens/carrossel/controlador-temperatura-umidade-stm-img1.jpg" alt="Imagem um do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel/controlador-temperatura-umidade-stm-img2.jpg" alt="Imagem dois do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel/controlador-temperatura-umidade-stm-img3.jpg" alt="Imagem três do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel/controlador-temperatura-umidade-stm-img4.png" alt="Imagem quatro do template">
+                    </div>
+                    <div class="slide">
+                        <img src="imagens/carrossel/controlador-temperatura-umidade-stm-img5.png" alt="Imagem cinco do template">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer ng-include="'../blocks/footer.html'"><!-- Importação do footer --></footer>
+</body>
+</html>
